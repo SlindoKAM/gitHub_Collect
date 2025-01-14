@@ -22,7 +22,7 @@
                 <button onclick="fetchProfile()">Search</button>
             </div>
             <div class="err-Msg" id="errMsg">
-                User not found or An Error Occurred.
+                User not found or an Error Occurred.
             </div>
             <div class="loading" id="loading">
                 Loading...
@@ -31,11 +31,12 @@
 
         <div class="profile-container" id="profile">
             <div class="profile-header">
-                <img src="avatar" id="avatar" alt="Profile Avatar-Popayi_Person">
+                <img class="avatar" id="avatar" alt="Profile Avatar-Popayi_Person">
                 <div class="profile-details">
                     <h2 id="name"></h2>
                     <p id="bio"></p>
                     <p id="location"></p>
+                    <a id="githubLinked" href="#" target="_blank">View Profile on GitHub</a>
                     <div class="stats">
                         <div class="stat-item">
                             <span>👥 Followers:</span>
