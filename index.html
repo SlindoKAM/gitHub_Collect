@@ -12,9 +12,49 @@
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
-    <header>
-        GitHub Profile Collecter
-    </header>
-    
+    <div class="container">
+        <div class="search-container">
+            <h1>
+                GitHub Profile Collecter
+            </h1>
+            <div class="search-box">
+                <input type="text" id="username" placeholder="Enter Your GitHub Username" aria-label="GitHub Username">
+                <button onclick="fetchProfile()">Search</button>
+            </div>
+            <div class="err-Msg" id="errMsg">
+                User not found or An Error Occurred.
+            </div>
+            <div class="loading" id="loading">
+                Loading...
+            </div>
+        </div>
+
+        <div class="profile-container" id="profile">
+            <div class="profile-header">
+                <img src="avatar" id="avatar" alt="Profile Avatar-Popayi_Person">
+                <div class="profile-details">
+                    <h2 id="name"></h2>
+                    <p id="bio"></p>
+                    <p id="location"></p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span>👥 Followers:</span>
+                            <span id="followers"></span>
+                        </div>
+                        <div class="stat-item">
+                            <span>👤 Following:</span>
+                            <span id="following"></span>
+                        </div>
+                        <div class="stat-item">
+                            <span>📚 Repositories:</span>
+                            <span id="repos"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
 </body>
 </html>
